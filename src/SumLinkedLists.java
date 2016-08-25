@@ -1,6 +1,3 @@
-import java.util.Scanner;
-import linkedlist.Node; 
-
 /* Given two numbers represented by two linked lists, write a function that returns sum list. 
  * The sum list is linked list representation of addition of two input numbers. 
  * Node that this problem can have two versions:
@@ -24,6 +21,8 @@ import linkedlist.Node;
  * 
  * Note that in the solution below, we assume we only have access of the Node class, but not the LinkedList class
  */
+import java.util.Scanner;
+import linkedlist.Node; 
 
 public class SumLinkedLists {
 	
