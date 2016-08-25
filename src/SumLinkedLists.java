@@ -2,8 +2,8 @@
  * The sum list is linked list representation of addition of two input numbers. 
  * Node that this problem can have two versions:
  * Forward version:
- * 		The most significant digit is the first node and the least significant digit is the last node (Natural order)
- * 		Example: 
+ * The most significant digit is the first node and the least significant digit is the last node (Natural order)
+ * 	Example: 
  * 		Input:
  * 			First list:  3 -> 4 -> 2 (342)
  * 			Second list: 9 -> 9 -> 8 -> 6 (9986)
@@ -11,8 +11,8 @@
  * 			Result list: 1 -> 0 -> 3 -> 2 -> 8 (10328)
  * 
  * Backward version:
- * 	    The least significant digit is the first node and the most significant digit is the last node (Reverse order)
- * 		Example: 
+ * The least significant digit is the first node and the most significant digit is the last node (Reverse order)
+ * 	Example: 
  * 		Input:
  * 			First list:  3 -> 4 -> 2 (243)
  * 			Second list: 9 -> 9 -> 8 -> 6 (6899)
@@ -64,7 +64,7 @@ public class SumLinkedLists {
 	
 	/*
 	 * Forward version:
-	 * Needed to return two values in the helper method, to ResultWrapper is needed.
+	 * Needed to return two values in the helper method, so ResultWrapper is needed.
 	 */
 	private static class ResultWrapper {
 		Node<Integer> node;
