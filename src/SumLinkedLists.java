@@ -14,7 +14,7 @@ import linkedlist.Node;
  * 			Result list: 1 -> 0 -> 3 -> 2 -> 8 (10328)
  * 
  * Backward version:
- * 	    The least significant digit is the first node and the most significant digit is the last node (Natural order)
+ * 	    The least significant digit is the first node and the most significant digit is the last node (Reverse order)
  * 		Example: 
  * 		Input:
  * 			First list:  3 -> 4 -> 2 (243)
