@@ -38,7 +38,7 @@ public class BiNodeConversion {
 	 */
 	public static <T> void convert(BinaryTree<T> bt) {
 		
-		//Pass the root node, and the true boolean value, indicating whether we want the head of the result, to the helper method. 
+		//Pass the root node, and the true boolean value, indicating that we want the head of the result, to the helper method. 
 		Node<T> head = convert(bt.getRoot(), true);
 		
 		//Conversion complete, print it as a linked list
@@ -49,7 +49,7 @@ public class BiNodeConversion {
 	/*
 	 * Conversion main process
 	 * @param node. The head of a tree to be converted
-	 * @param head. Boolean value indicating when we want to return the head or tail of the converted linked list
+	 * @param head. Boolean value indicating whether we want to return the head or tail of the converted linked list
 	 */
 	private static <T> Node<T> convert(Node<T> node, boolean head) {
 		//Base case
@@ -63,7 +63,6 @@ public class BiNodeConversion {
 		Node<T> next = convert(node.right, true);
 		
 		//Connect the current node with the converted left(prev) list above
-		//Set the left(prev) node to tail of the converted left list, even if it's null
 		node.left = prev;
 		if (prev != null) {
 			//And then set the right(next) node of the tail of the converted left list to the current node 
@@ -71,7 +70,6 @@ public class BiNodeConversion {
 		}
 		
 		//Connect the current node with the converted right(next) list above
-		//Set the right(next) node to the head of the converted right list above, even if it's null
 		node.right = next;
 		if (next != null) {
 			//And then set the left(prev) node of the head of the converted right list to the current node
