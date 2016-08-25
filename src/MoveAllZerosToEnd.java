@@ -3,7 +3,7 @@ public class MoveAllZerosToEnd {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] arr = new int[] {1,3,0,0, 0, 2, 8,12,0,4,0,7};
+		int[] arr = new int[] {0,1,3,0,0, 0, 2, 8,12,0,4,0,7};
 		printArray(arr);
 		moveAllZerosToEnd(arr);
 		printArray(arr);
@@ -14,6 +14,8 @@ public class MoveAllZerosToEnd {
 	 * O(n) time, O(1) space
 	 */
 	public static void moveAllZerosToEnd(int[] arr) {
+		if (arr == null) return;
+		
 		int j = -1;
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == 0 && j < 0) {
@@ -32,6 +34,8 @@ public class MoveAllZerosToEnd {
 	 * O(n) time, O(1) space
 	 */
 	public static void moveAllZerosToEnd2(int[] arr) {
+		if (arr == null) return;
+		
 		int j = -1;
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == 0 && j < 0) {
@@ -56,6 +60,8 @@ public class MoveAllZerosToEnd {
 	 * O(n) time, O(n) space
 	 */
 	public static void moveAllZerosToEnd3(int[] arr) {
+		if (arr == null) return;
+		
 		int[] result = new int[arr.length];
 		
 		int j = 0;
@@ -74,6 +80,8 @@ public class MoveAllZerosToEnd {
 	 * O(n2) time, O(1) space
 	 */
 	public static void moveAllZerosToEnd4(int[] arr) {
+		if (arr == null) return;
+		
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == 0) {
 				for (int j = i + 1; j < arr.length; j++) {
@@ -87,12 +95,17 @@ public class MoveAllZerosToEnd {
 	}
 	
 	private static void swap(int[] arr, int start, int end) {
+		if (arr == null) return;
+		if (start < 0 || start >= arr.length || end < 0 || end > arr.length) return;
+		
 		int temp = arr[start];
 		arr[start] = arr[end];
 		arr[end] = temp;
 	}
 	
 	private static void printArray(int[] arr) {
+		if (arr == null) return;
+		
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i]);
 			if (i < arr.length - 1) {
