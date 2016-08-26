@@ -3,7 +3,7 @@
 * [BiNode Conversion](#binode-conversion)
 * [Edit Distance](#edit-distance)
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
-* Move All Zeros to End
+* [Move All Zeros to End](#move-all-zeros-to-end)
 * Sum Two Linked Lists
 * Sum of Weight of Each Path Between Two Nodes in a Graph
 * Tower of Hanoi
@@ -48,3 +48,13 @@ Example:
 Input: [1, 2, 3, 2, 3, 2, 1, 2, 3]
 
 Output: 3   
+
+### [Move All Zeros to End](MoveAllZerosToEnd.java)
+
+Given an array of integers, move all elements that are zeros to the end of the array while the rest of the elements are still in their original order.
+
+Example:
+
+Input: [0, 1, 3, 0, 0, 0, ,2 8, 12, 0, 4, 0, 7]
+
+Output: [1, 3, 2, 8, 12, 4, 7, 0, 0, 0, 0, 0, 0]
