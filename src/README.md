@@ -5,7 +5,7 @@
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
 * [Move All Zeros to End](#move-all-zeros-to-end)
 * [Sum Two Linked Lists](#sum-two-linked-lists)
-* [Sum of Weight of Each Path Between Two Nodes in a Graph](SumOfWeightOfEachPathBetweenTwoNodes.java)
+* [Sum of Weight of Each Path Between Two Nodes in a Graph](#sum-of-weight-of-each-path-between-two-nodes-in-a-graph)
 * [Tower of Hanoi](#tower-of-hanoi)
 
 ### [BiNode Conversion](BiNodeConversion.java)
@@ -92,6 +92,32 @@ Input:
 Output:
 
 * Result list: `2 -> 4 -> 1 -> 7 (7142)`
+
+### [Sum of Weight of Each Path Between Two Nodes in a Graph](SumOfWeightOfEachPathBetweenTwoNodes.java)
+
+Given a undirected graph with weights, 
+return the sum of the weight of each path between two nodes (shortest path between two vertices). 
+Assume there are no cycles.
+Example:
+
+Input:
+```
+       A
+       | 1
+       B
+   2 /   \ 3
+    C     D
+```    
+Output:
+`18`
+
+since 
+* A to B has weight 1
+* A to C has weight 3
+* A to D has weight 4
+* B to C has weight 2
+* B to D has weight 3
+* C to D has weight 5 
 
 ### [Tower of Hanoi](TowerOfHanoi.java)
 
