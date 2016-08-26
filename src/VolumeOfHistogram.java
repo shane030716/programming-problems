@@ -25,7 +25,7 @@
  *   1   0   0   4   0   0   6   0   0   3  10   0   2   0   5   2   0   3   0   0 
  *   
  *   After filling the histogram with water with its maximum capacity, it will then look like this.
- *   '+'
+ *   '+' represents the water
  *                                          ___                                    
  *                                         |   |                                   
  *                                         |   |                                   
