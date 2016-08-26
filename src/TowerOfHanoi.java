@@ -59,6 +59,8 @@ public class TowerOfHanoi {
 	private static int moves = 0;
 	
 	/*
+	 * The main recursive function
+	 * 
 	 * @param stacks: the 3 stacks with all the disks
 	 * @param size: number of disks to be moved
 	 * @param source: the source pole
