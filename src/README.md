@@ -7,6 +7,7 @@
 * [Sum Two Linked Lists](#sum-two-linked-lists)
 * [Sum of Weight of Each Path Between Two Nodes in a Graph](#sum-of-weight-of-each-path-between-two-nodes-in-a-graph)
 * [Tower of Hanoi](#tower-of-hanoi)
+* [Volume Of Histogram](#volume-of-histogram)
 
 ### [BiNode Conversion](BiNodeConversion.java)
 
@@ -130,3 +131,48 @@ to another pole (say ‘target pole’) with the help of third pole (say auxilia
 The puzzle has the following two rules:
    1. You can’t place a larger disk onto smaller disk
    2. Only one disk can be moved at a time
+
+### [Volume of Histogram](VolumeOfHistogram.java)
+
+Given a histogram represented by an array of non-negative integers,
+each element in the array represents the height of each bar of the histogram.
+Now imagine pouring water inside the histogram.
+Find the maximum volume of water that the histogram can hold.
+Assume all bars have the same width and the width is 1 unit
+
+Example:
+
+Input: `[1,0,0,4,0,0,6,0,0,3,10,0,2,0,5,2,0,3,0,0]`
+
+Output: `42`
+
+The histogram will look like
+```
+                                         ___                                    
+                                        |   |                                   
+                                        |   |                                   
+                                        |   |                                   
+                         ___            |   |                                   
+                        |   |           |   |            ___                    
+             ___        |   |           |   |           |   |                   
+            |   |       |   |        ___|   |           |   |        ___        
+            |   |       |   |       |   |   |    ___    |   |___    |   |       
+ ___        |   |       |   |       |   |   |   |   |   |   |   |   |   |       
+|___|___ ___|___|___ ___|___|___ ___|___|___|___|___|___|___|___|___|___|___ ___
+  1   0   0   4   0   0   6   0   0   3  10   0   2   0   5   2   0   3   0   0 
+```  
+After filling the histogram with water with its maximum capacity, it will then look like this. '+' represents the water.
+```
+                                         ___                                    
+                                        |   |                                   
+                                        |   |                                   
+                                        |   |                                   
+                         ___            |   |                                   
+                        |   |+++ +++ +++|   |            ___                    
+             ___        |   |+++ +++ +++|   |+++ +++ +++|   |                   
+            |   |+++ +++|   |+++ +++ ±±±|   |+++ +++ +++|   |        ___        
+            |   |+++ +++|   |+++ +++|   |   |+++ ±±± +++|   |±±± +++|   |       
+ ___        |   |+++ +++|   |+++ +++|   |   |+++|   |+++|   |   |+++|   |       
+|___|±±± ±±±|___|±±± ±±±|___|±±± ±±±|___|___|±±±|___|±±±|___|___|±±±|___|___ ___
+  1   0   0   4   0   0   6   0   0   3  10   0   2   0   5   2   0   3   0   0 
+```
