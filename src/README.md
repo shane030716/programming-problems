@@ -4,7 +4,7 @@
 * [Edit Distance](#edit-distance)
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
 * [Move All Zeros to End](#move-all-zeros-to-end)
-* Sum Two Linked Lists
+* [Sum Two Linked Lists](#sum-two-linked-lists)
 * Sum of Weight of Each Path Between Two Nodes in a Graph
 * Tower of Hanoi
 
@@ -45,9 +45,9 @@ All numbers occur even number of times except one number which occurs odd number
 
 Example:
 
-Input: [1, 2, 3, 2, 3, 2, 1, 2, 3]
+Input: `[1, 2, 3, 2, 3, 2, 1, 2, 3]`
 
-Output: 3   
+Output: `3`   
 
 ### [Move All Zeros to End](MoveAllZerosToEnd.java)
 
@@ -55,6 +55,49 @@ Given an array of integers, move all elements that are zeros to the end of the a
 
 Example:
 
-Input: [0, 1, 3, 0, 0, 0, ,2 8, 12, 0, 4, 0, 7]
+Input: `[0, 1, 3, 0, 0, 0, ,2 8, 12, 0, 4, 0, 7]`
 
-Output: [1, 3, 2, 8, 12, 4, 7, 0, 0, 0, 0, 0, 0]
+Output: `[1, 3, 2, 8, 12, 4, 7, 0, 0, 0, 0, 0, 0]`
+
+### [Sum Two Linked Lists](SumLinkedLists.java)
+
+Given two numbers represented by two linked lists, write a function that returns sum list. 
+
+The sum list is linked list representation of addition of two input numbers. 
+
+Node that this problem can have two versions:
+
+Forward version:
+
+The most significant digit is the first node and the least significant digit is the last node (Natural order)
+
+Example: 
+
+Input:
+
+First list:  `3 -> 4 -> 2 (342)`
+
+Second list: `9 -> 9 -> 8 -> 6 (9986)`
+
+Output:
+
+Result list: `1 -> 0 -> 3 -> 2 -> 8 (10328)`
+
+
+
+Backward version:
+
+The least significant digit is the first node and the most significant digit is the last node (Reverse order)
+
+Example: 
+
+Input:
+
+First list: `3 -> 4 -> 2 (243)`
+
+Second list: `9 -> 9 -> 8 -> 6 (6899)`
+
+Output:
+
+Result list: `2 -> 4 -> 1 -> 7 (7142)`
+
