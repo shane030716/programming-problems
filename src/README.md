@@ -63,34 +63,33 @@ Given two numbers represented by two linked lists, write a function that returns
 The sum list is linked list representation of addition of two input numbers. 
 Node that this problem can have two versions:
 
-##### Forward version:
+#### Forward version:
 
 The most significant digit is the first node and the least significant digit is the last node (Natural order). Example: 
 
 Input:
 
-First list:  `3 -> 4 -> 2 (342)`
-
-Second list: `9 -> 9 -> 8 -> 6 (9986)`
+* First list:  `3 -> 4 -> 2 (342)`
+* Second list: `9 -> 9 -> 8 -> 6 (9986)`
 
 Output:
 
-Result list: `1 -> 0 -> 3 -> 2 -> 8 (10328)`
+* Result list: `1 -> 0 -> 3 -> 2 -> 8 (10328)`
 
 
 
-##### Backward version:
+#### Backward version:
 
 The least significant digit is the first node and the most significant digit is the last node (Reverse order). 
 Example: 
 
 Input:
 
-First list: `3 -> 4 -> 2 (243)`
+* First list: `3 -> 4 -> 2 (243)`
 
-Second list: `9 -> 9 -> 8 -> 6 (6899)`
+* Second list: `9 -> 9 -> 8 -> 6 (6899)`
 
 Output:
 
-Result list: `2 -> 4 -> 1 -> 7 (7142)`
+* Result list: `2 -> 4 -> 1 -> 7 (7142)`
 
