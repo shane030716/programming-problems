@@ -8,7 +8,7 @@ public class LargestSumSubarray {
 //		int[] arr = {-3, -2,  -1};
 //		int[] arr = {};
 		printArray(arr);
-		int max_sum = largestSum4Detail(arr);
+		int max_sum = largestSum(arr);
 		System.out.println("The max sum is " + max_sum);
 	}
 	

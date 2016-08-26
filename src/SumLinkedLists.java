@@ -228,6 +228,8 @@ public class SumLinkedLists {
 		return node;
 	}
 
+	
+	//All the code below are for preparation to solve the problem
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		while (true)

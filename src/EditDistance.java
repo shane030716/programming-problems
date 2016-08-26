@@ -17,7 +17,7 @@ public class EditDistance {
 	 * Use dynamic programming
 	 */
 	public static int editDistance(String s1, String s2) {
-		//Create a 2D array based on the numbers of the characters of s1 and s2, and plus one row and column
+		//Create a 2D array based on the numbers of the characters of s1 and s2, and plus one row and one column
 		int[][] m = new int[s1.length() + 1][s2.length() + 1];
 		
 		//initialize the first row
