@@ -30,7 +30,6 @@ Output:
 ### [Edit Distance](EditDistance.java)
 
 Given two strings str1 and str2 and below operations that can performed on str1. 
-
 Find minimum number of edits (operations) required to convert ‘str1′ into ‘str2′.
 * Insert
 * Remove
@@ -40,8 +39,7 @@ All of the above operations are of equal cost.
 
 ### [Find the Number Occurring Odd Number of Times](FindTheNumberOccurringOddNumberOfTimes.java)
 
-Given an array of POSITIVE integers. 
-All numbers occur even number of times except one number which occurs odd number of times. 
+Given an array of POSITIVE integers. All numbers occur even number of times except one number which occurs odd number of times. Find this number.
 
 Example:
 
@@ -55,23 +53,19 @@ Given an array of integers, move all elements that are zeros to the end of the a
 
 Example:
 
-Input: `[0, 1, 3, 0, 0, 0, ,2 8, 12, 0, 4, 0, 7]`
+Input: `[0, 1, 3, 0, 0, 0, 2, 8, 12, 0, 4, 0, 7]`
 
 Output: `[1, 3, 2, 8, 12, 4, 7, 0, 0, 0, 0, 0, 0]`
 
 ### [Sum Two Linked Lists](SumLinkedLists.java)
 
 Given two numbers represented by two linked lists, write a function that returns sum list. 
-
 The sum list is linked list representation of addition of two input numbers. 
-
 Node that this problem can have two versions:
 
-Forward version:
+##### Forward version:
 
-The most significant digit is the first node and the least significant digit is the last node (Natural order)
-
-Example: 
+The most significant digit is the first node and the least significant digit is the last node (Natural order). Example: 
 
 Input:
 
@@ -85,10 +79,9 @@ Result list: `1 -> 0 -> 3 -> 2 -> 8 (10328)`
 
 
 
-Backward version:
+##### Backward version:
 
-The least significant digit is the first node and the most significant digit is the last node (Reverse order)
-
+The least significant digit is the first node and the most significant digit is the last node (Reverse order). 
 Example: 
 
 Input:
