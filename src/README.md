@@ -5,7 +5,7 @@
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
 * [Move All Zeros to End](#move-all-zeros-to-end)
 * [Sum Two Linked Lists](#sum-two-linked-lists)
-* [Sum of Weight of Each Path Between Two Nodes in a Graph](SumOfWeightOfEachPathBetweenTwoNodes.java]
+* [Sum of Weight of Each Path Between Two Nodes in a Graph](SumOfWeightOfEachPathBetweenTwoNodes.java)
 * [Tower of Hanoi](#tower-of-hanoi)
 
 ### [BiNode Conversion](BiNodeConversion.java)
