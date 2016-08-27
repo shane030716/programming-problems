@@ -2,6 +2,7 @@
 
 * [BiNode Conversion](#binode-conversion)
 * [Edit Distance](#edit-distance)
+* [Find The Nearest Locker In The City](#find-the-nearest-locker-in-the-city)
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
 * [Move All Zeros to End](#move-all-zeros-to-end)
 * [Sum Two Linked Lists](#sum-two-linked-lists)
@@ -38,6 +39,38 @@ Find minimum number of edits (operations) required to convert ‘str1′ into �
 
 All of the above operations are of equal cost.
 
+### [Find The Nearest Locker In The City](FindTheNearestLockerInTheCity.java)
+
+A city will be represented by a 2D array where each element is considered as a block in the city.
+Given the width and the length of the city, and the locations of some lockers inside the city, 
+which will be represented by the indexes of the array as coordinates,
+generate the 2D grid so that each element specifies the distance to the closest locker.
+The distance between two blocks is the sum of their horizontal and vertical distance. 
+(a move in the diagonal direction is there considered a distance of 2)
+
+Example:
+
+Input:
+```
+		cityWidth: 5
+		cityLength: 7
+		lockerXCoordinates: [2, 4]
+		lockerYCoordinates: [5, 1]
+```		
+Output:
+```
+		-----------------------------
+		| 5 | 4 | 5 | 4 | 3 | 2 | 3 |
+		-----------------------------
+		| 4 | 3 | 4 | 3 | 2 | 1 | 2 |
+		-----------------------------
+		| 3 | 2 | 3 | 2 | 1 | 0 | 1 |
+		-----------------------------
+		| 2 | 1 | 2 | 3 | 2 | 1 | 2 |
+		-----------------------------
+		| 1 | 0 | 1 | 2 | 3 | 2 | 3 |
+		-----------------------------
+```
 ### [Find the Number Occurring Odd Number of Times](FindTheNumberOccurringOddNumberOfTimes.java)
 
 Given an array of POSITIVE integers. All numbers occur even number of times except one number which occurs odd number of times. Find this number.
