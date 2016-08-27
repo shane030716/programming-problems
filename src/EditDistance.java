@@ -5,6 +5,15 @@
  * Remove
  * Replace
  * All of the above operations are of equal cost.
+ * Examples:
+ * Input: Saturday, Sunday
+ * Output: 3
+ * 
+ * Input: Canada, Canadian
+ * Output: 2
+ * 
+ * Input: edit, distance
+ * Output: 6
  */
 
 import java.util.Scanner;
@@ -48,7 +57,7 @@ public class EditDistance {
 		//Use the MatrixPrinter to see what m looks like
 		//Note because the matrix is one row and one column larger than the sizes of s1 and s2.
 		//We need to fill one extra character for each of s1 and s2
-//		new MatrixPrinter().printMatrix("*" + s1, "*" + s2, m);
+		new MatrixPrinter().printMatrix("*" + s1, "*" + s2, m);
 		
 		//Return the last (bottom right) element from the matrix
 		return m[s1.length()][s2.length()];
@@ -69,7 +78,8 @@ public class EditDistance {
 		System.out.print("Enter second word: ");
 		String s2 = sc.nextLine();
 		
-		editDistance(s1, s2);
+		int distance = editDistance(s1, s2);
+		System.out.println("The edit distance between '" +s1 + "' and '" + s2 + "' is " + distance);
 	}
 
 }
