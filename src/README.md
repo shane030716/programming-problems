@@ -39,6 +39,20 @@ Find minimum number of edits (operations) required to convert ‘str1′ into �
 
 All of the above operations are of equal cost.
 
+Examples
+
+Input: `Saturday, Sunday`
+
+Output: `3`
+
+Input: `Canada, Canadian`
+
+Output: `3`
+
+Input: `edit, distance`
+
+Output: `6`
+
 ### [Find The Nearest Locker In The City](FindTheNearestLockerInTheCity.java)
 
 A city will be represented by a 2D array where each element is considered as a block in the city.
