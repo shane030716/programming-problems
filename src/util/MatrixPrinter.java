@@ -38,6 +38,24 @@ public class MatrixPrinter {
 	}
 	
 	/*
+	 * Print the matrix with indexes
+	 */
+	public void printMatrixWithIndex(int[][] m) {
+		if (m.length <= 0) return;
+		
+		int[] arr1 = new int[m.length];
+		for (int i = 0; i < arr1.length; i++) {
+			arr1[i] = i;
+		}
+		int[] arr2 = new int[m[0].length];
+		for (int i = 0; i < arr2.length; i++) {
+			arr2[i] = i;
+		}
+				
+		printMatrix(arr1, arr2, m);
+	}
+	
+	/*
 	 * Print the matrix with str1 as the first column and str2 as the first row
 	 */
 	public void printMatrix(String str1, String str2, int[][] m) {
