@@ -33,11 +33,11 @@ public class HistogramPrinter {
 			}
 		
 		}
-		System.out.print("Filled: ");
-		for (int i = 0; i < filled.length; i++) {
-			System.out.print(filled[i] + ", ");
-		}
-		System.out.println();
+//		System.out.print("Filled: ");
+//		for (int i = 0; i < filled.length; i++) {
+//			System.out.print(filled[i] + ", ");
+//		}
+//		System.out.println();
 		
 		
 		printHistogram(arr, filled);
