@@ -55,7 +55,7 @@ This problem can also be extended for the Canadian version, where you need to ro
 Example2:
 
 Denominations (Canada): `[200, 100, 25, 10, 5]`
-The number of ways to make exact change of ¢`10` (rounded from ¢`12`) is 2
+The number of ways to make exact change of ¢`10` (rounded from ¢`12`) is `2`
 ```
 {10: 1} 
 {5: 2}
