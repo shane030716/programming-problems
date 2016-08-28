@@ -1,25 +1,24 @@
 /*
- * Given a money amount as cents as an integer, and the list of all the different coin denominations for this currency.
- * Suppose you have unlimited supply of all the coins,
- * how many different ways can you make an exact change for this value.
- * This solution includes two versions
- * One is to return only the number, and the other is to return all the different ways.
- * 
- * This problem can also be extended for the Canadian version, where you need to round the money amount to the nearest 5 cents first
- * 
- * Example:
- * 
- * US denominations [25, 10, 5, 1]
- * The number of ways to make exact change of ¢12 is 4
+ * Given an amount of money in cents, and a list of all the different coin denominations for this currency, 
+ * find how many different ways you can make a change for this amount. 
+ * (Suppose you have unlimited supply of all the coins)
+ * This problem could include two parts.
+ *  One is to return only the number, and the other is to return all the different ways.
+ *  
+ * Example1:
+ * Denominations (USA): [25, 10, 5, 1] The number of ways to make exact change of ¢12 is 4
  * {10: 1, 1: 2} 
  * {5: 2, 1: 2} 
  * {5: 1, 1: 7} 
- * {1: 12} 
+ * {1: 12}
  * 
- * Canadian denominations [200, 100, 25, 10, 5]
- * The number of ways to make exact change of CAD¢10 (rounded from ¢12) is 2
+ * This problem can also be extended for the Canadian version, 
+ * where you need to round the money amount to the nearest 5 cents first
+ * 
+ * Example2:
+ * Denominations (Canada): [200, 100, 25, 10, 5] The number of ways to make exact change of ¢10 (rounded from ¢12) is 2
  * {10: 1} 
- * {5: 2} 
+ * {5: 2}
  * 
  */
 
