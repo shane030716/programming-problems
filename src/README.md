@@ -255,3 +255,5 @@ After filling the histogram with water with its maximum capacity, it will then l
 |___|±±± ±±±|___|±±± ±±±|___|±±± ±±±|___|___|±±±|___|±±±|___|___|±±±|___|___ ___
   1   0   0   4   0   0   6   0   0   3  10   0   2   0   5   2   0   3   0   0 
 ```
+
+Note that the solution here includes the method to print out the histogram empty or filled.
