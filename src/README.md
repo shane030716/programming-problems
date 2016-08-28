@@ -55,7 +55,7 @@ This problem can also be extended for the Canadian version, where you need to ro
 Example2:
 
 Denominations (Canada): `[200, 100, 25, 10, 5]`
-The number of ways to make exact change of ¢`10` (rounded from ¢`12`) is 2
+The number of ways to make exact change of ¢`10` (rounded from ¢`12`) is `2`
 ```
 {10: 1} 
 {5: 2}
@@ -255,3 +255,5 @@ After filling the histogram with water with its maximum capacity, it will then l
 |___|±±± ±±±|___|±±± ±±±|___|±±± ±±±|___|___|±±±|___|±±±|___|___|±±±|___|___ ___
   1   0   0   4   0   0   6   0   0   3  10   0   2   0   5   2   0   3   0   0 
 ```
+
+Note that the solution here includes the method to print out the histogram empty or filled.
