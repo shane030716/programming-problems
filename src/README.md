@@ -33,7 +33,7 @@ Output:
 ### [Coin Change](CoinChange.java)
 
 Given an amount of money in cents, and the list of all the different coin denominations for this currency,
-find how many different ways can you make an exact change for this value.
+find how many different ways you can make a change for this amount.
 (Suppose you have unlimited supply of all the coins)
 
 This problem could include two parts.
