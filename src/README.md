@@ -32,7 +32,7 @@ Output:
 
 ### [Coin Change](CoinChange.java)
 
-Given an amount of money in cents, and the list of all the different coin denominations for this currency,
+Given an amount of money in cents, and a list of all the different coin denominations for this currency,
 find how many different ways you can make a change for this amount.
 (Suppose you have unlimited supply of all the coins)
 
@@ -53,6 +53,7 @@ The number of ways to make exact change of ¢`12` is `4`
 This problem can also be extended for the Canadian version, where you need to round the money amount to the nearest 5 cents first
 
 Example2:
+
 Denominations (Canada): `[200, 100, 25, 10, 5]`
 The number of ways to make exact change of ¢`10` (rounded from ¢`12`) is 2
 ```
