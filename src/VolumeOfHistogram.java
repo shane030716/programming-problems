@@ -51,13 +51,14 @@ public class VolumeOfHistogram {
 		printHistogram(arr);
 		printFilledHistogram(arr);
 		
-		volumeOfHistogram(arr);
+		int total_volume = volumeOfHistogram(arr);
+		System.out.println("Total volume: " + total_volume);
 	}
 	
 	/*
 	 * O(n) time, O(1) space
 	 */
-	public static void volumeOfHistogram(int[] arr) {
+	public static int volumeOfHistogram(int[] arr) {
 		
 		int total_volume = 0;
 		int current_volume = 0;
@@ -109,8 +110,7 @@ public class VolumeOfHistogram {
 			}
 		
 		}
-		
-		System.out.println("Total volume: " + total_volume);
+		return total_volume;
 	}
 	
 	
