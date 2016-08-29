@@ -16,6 +16,14 @@ public class Graph {
 		nodes.put(key, node);
 	}
 	
+	public GraphNode getNode(String key) {
+		return this.nodes.get(key);
+	}
+	
+	public void addEdge(String start, String end) {
+		addEdge(start, end, 1);
+	}
+	
 	public void addEdge(String start, String end, int weight) {
 		GraphNode startNode = nodes.get(start);
 		if (startNode == null){
@@ -65,6 +73,31 @@ public class Graph {
 					 queue.add(v);
 				 }
 			}
+		}
+	}
+	
+	public void breadthFristSearch(GraphNode node) {
+		LinkedList<GraphNode> queue = new LinkedList<GraphNode>();
+		node.checked = true;
+		queue.addLast(node);
+		
+		while (!queue.isEmpty()) {
+			GraphNode n = queue.pollFirst();
+			System.out.print(n);
+			System.out.print(", ");
+			for (GraphNode neighbor: n.neighbors) {
+				if (!neighbor.checked) {
+					neighbor.checked = true;
+					neighbor.level = n.level + 1;
+					queue.addLast(neighbor);
+				}
+			}
+		}
+	}
+	
+	public void reset() {
+		for (GraphNode node: this.nodes.values()) {
+			node.reset();
 		}
 	}
 	
