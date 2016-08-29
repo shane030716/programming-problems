@@ -3,16 +3,16 @@ import java.util.Stack;
 
 /*
  * Tower of Hanoi is a mathematical puzzle. 
- * It consists of three poles and a number of disks of different sizes which can slide onto any poles. 
- * The puzzle starts with the disk in a neat stack in ascending order of size in one pole, 
+ * It consists of three towers and a number of disks of different sizes which can slide onto any tower. 
+ * The puzzle starts with the disk in a neat stack in ascending order of size in one tower, 
  * the smallest at the top thus making a conical shape. 
- * The objective of the puzzle is to move all the disks from one pole (say ‘source pole’) 
- * to another pole (say ‘target pole’) with the help of third pole (say auxiliary pole).
+ * The objective of the puzzle is to move all the disks from one tower (say ‘source tower’) 
+ * to another tower (say ‘target tower’) with the help of third tower (say auxiliary tower).
  * The puzzle has the following two rules:
  *    1. You can’t place a larger disk onto smaller disk
  *    2. Only one disk can be moved at a time
  *    
- * In this example below, we will start from the first pole and move them to the third pole.
+ * In this example below, we will start from the first tower and move them to the third tower.
  */
 
 
@@ -22,7 +22,7 @@ public class TowerOfHanoi {
 		// TODO Auto-generated method stub
 		
 		//The number of disks for the game.
-		int numberOfDisks = 8;
+		int numberOfDisks = 3;
 		
 		//Initialize the stacks
 		Stack<Integer>[] stacks = initializeGame(numberOfDisks);
@@ -31,8 +31,14 @@ public class TowerOfHanoi {
 		printStacks(stacks);
 		
 		//Start moving the disks, default source is 0 and target is 2
-		move(stacks, numberOfDisks, 0, 2);
+		solveTowerOfHanoi(stacks);
 		
+	}
+	
+	public static void solveTowerOfHanoi(Stack<Integer>[] stacks) {
+		if (stacks == null || stacks.length != 3) return;
+		int numberOfDisks = stacks[0].size();
+		move(stacks, numberOfDisks, 0, 2);
 	}
 	
 	@SuppressWarnings("unchecked")
@@ -63,10 +69,10 @@ public class TowerOfHanoi {
 	 * 
 	 * @param stacks: the 3 stacks with all the disks
 	 * @param size: number of disks to be moved
-	 * @param source: the source pole
-	 * @param target: the target pole
+	 * @param source: the source tower
+	 * @param target: the target tower
 	 * 
-	 * Move [size] number of disks from the [source] pole to the [target] pole
+	 * Move [size] number of disks from the [source] tower to the [target] tower
 	 */
 	public static void move(Stack<Integer>[] stacks, int size, int source, int target) {
 		//Base case
@@ -85,17 +91,16 @@ public class TowerOfHanoi {
 		
 		
 		//Core of the recursive algorithm
-		// First, get the auxiliary pole, which is the pole other than the source or the target pole
-		int auxiliary_pole = 3 - source - target;
+		// First, get the auxiliary tower, which is the tower other than the source or the target tower
+		int auxiliary_tower = 3 - source - target;
 		
-		//The subproblem here is to move all the disks except for the bottom disk to the auxiliary pole
-		move(stacks, size - 1, source, auxiliary_pole);
-		//And then move the bottom disk to the target pole
+		//The subproblem here is to move all the disks except for the bottom disk to the auxiliary tower
+		move(stacks, size - 1, source, auxiliary_tower);
+		//And then move the bottom disk to the target tower
 		move(stacks, 1, source, target);
-		//And finally move the rest of disks from the auxiliary pole to the target pole
-		move(stacks, size - 1, auxiliary_pole, target);
+		//And finally move the rest of disks from the auxiliary tower to the target tower
+		move(stacks, size - 1, auxiliary_tower, target);
 	}
-	
 	
 	/*
 	 * Method to print the current state of the stacks
@@ -104,7 +109,7 @@ public class TowerOfHanoi {
 	private static void printStacks(Stack<Integer>[] stacks, int disk, int source, int target) {
 		System.out.println("Move: #" + moves);
 		if (disk >= 0) {
-			System.out.format("Moved disk %d from pole %d to pole %d.%n", disk, source, target);
+			System.out.format("Moved disk %d from tower %d to tower %d.%n", disk, source, target);
 		}
 		for (int i = 0; i<stacks.length;i++) {
 			Iterator<Integer> it = stacks[i].iterator();
