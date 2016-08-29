@@ -9,6 +9,7 @@
 * [Sum Two Linked Lists](#sum-two-linked-lists)
 * [Sum of Weight of Each Path Between Two Nodes in a Graph](#sum-of-weight-of-each-path-between-two-nodes-in-a-graph)
 * [Tower of Hanoi](#tower-of-hanoi)
+* [Triple Step](#triple-step)
 * [Volume Of Histogram](#volume-of-histogram)
 
 ### [BiNode Conversion](BiNodeConversion.java)
@@ -210,7 +211,12 @@ to another pole (say ‘target pole’) with the help of third pole (say auxilia
 The puzzle has the following two rules:
    1. You can’t place a larger disk onto smaller disk
    2. Only one disk can be moved at a time
+   
+### [Triple Step](TripleStep.java)
 
+A child is running up a staircase with n steps and can hop either 1 step, 2 steps or 3 steps at a time, 
+count how many possible ways the child can run up n stairs   
+  
 ### [Volume of Histogram](VolumeOfHistogram.java)
 
 Given a histogram represented by an array of non-negative integers,
