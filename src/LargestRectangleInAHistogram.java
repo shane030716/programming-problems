@@ -1,23 +1,59 @@
+/*
+ * Given a histogram represented by an array of non-negative integers,
+ * each element in the array represents the height of each bar of the histogram.
+ * Find the largest rectangular area formed by a number of contiguous bars.
+ * 
+ * Example 1:
+ * Input: {3,1,4,3,5,2,1}
+ * Output: 9
+ *                  ___        
+ *          ___    |   |       
+ *  ___    |   |___|   |       
+ * |   |   |+++|+++|+++|___    
+ * |   |___|+++|+++|+++|   |___
+ * |___|___|±±±|±±±|±±±|___|___|
+ *   3   1   4   3   5   2   1 
+ * The area of the largest rectangle is 9, which is formed between bar #2 and #4 with height 3.
+ * 
+ *   
+ * Example 2:
+ * Input: {3,1,4,3,5,2,2}
+ * Output: 10
+ *                  ___        
+ *          ___    |   |       
+ *  ___    |   |___|   |       
+ * |   |   |   |   |   |___ ___
+ * |   |___|+++|+++|+++|+++|+++|
+ * |___|___|±±±|±±±|±±±|±±±|±±±|
+ *   3   1   4   3   5   2   2 
+ * The area of the largest rectangle is 10, which is formed between bar #2 and #6 with height 2.
+ * 
+ */
+
+
 import java.util.Stack;
 
 import util.*;
 
 public class LargestRectangleInAHistogram {
-
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-//		int[] arr = new int[] {6, 1, 5, 4, 5, 2, 6};
-//		int[] arr = new int[] {0,3,4,1,4,3,5,1,1};
-//		int[] arr = new int[] {1,2,3,4,5};
-		int[] arr = new int[] {};
+	
+		int[] arr = new int[] {3,1,4,3,5,2,1};
+//		int[] arr = new int[] {3,1,4,3,5,2,2};
+
+		//Visualize the problem, easier for debugging
 		HistogramPrinter histogramPrinter = new HistogramPrinter();
+		//print the histogram 
 		histogramPrinter.printHistogram(arr);
-		
-		largestRectangle(arr);
-		
+		//print the histogram with the largest rectangle filled
 		histogramPrinter.printLargestRectangleFilledHistogram(arr);
+		
+		//Find the largest rectangle
+		largestRectangle(arr);
 				
 	}
+	
 	
 	/*
 	 * We use a stack to keep track of indexes of all the previous bars that are equal or shorter than the current bar,
