@@ -57,7 +57,7 @@ public class VolumeOfHistogram {
 		//Visualize the problem, print the histogram out empty and filled
 		HistogramPrinter histogramPrinter = new HistogramPrinter();
 		histogramPrinter.printHistogram(arr);
-		histogramPrinter.printFilledHistogram(arr);
+		histogramPrinter.printWaterFilledHistogram(arr);
 
 	}
 	
