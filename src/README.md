@@ -3,14 +3,15 @@
 * [BiNode Conversion](#binode-conversion)
 * [Coin Change](#coin-change)
 * [Edit Distance](#edit-distance)
-* [Find The Nearest Locker In The City](#find-the-nearest-locker-in-the-city)
+* [Find the Nearest Locker in the City](#find-the-nearest-locker-in-the-city)
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
+* [Largest Rectangle in a Histogram](#largest-rectangle-in-a-histogram)
 * [Move All Zeros to End](#move-all-zeros-to-end)
 * [Sum Two Linked Lists](#sum-two-linked-lists)
 * [Sum of Weight of Each Path Between Two Nodes in a Graph](#sum-of-weight-of-each-path-between-two-nodes-in-a-graph)
 * [Tower of Hanoi](#tower-of-hanoi)
 * [Triple Step](#triple-step)
-* [Volume Of Histogram](#volume-of-histogram)
+* [Volume of Histogram](#volume-of-histogram)
 
 ### [BiNode Conversion](BiNodeConversion.java)
 
@@ -86,7 +87,7 @@ Input: `edit, distance`
 
 Output: `6`
 
-### [Find The Nearest Locker In The City](FindTheNearestLockerInTheCity.java)
+### [Find the Nearest Locker in the City](FindTheNearestLockerInTheCity.java)
 
 A city will be represented by a 2D array where each element is considered as a block in the city.
 Given the width and the length of the city, and the locations of some lockers inside the city, 
@@ -127,6 +128,45 @@ Example:
 Input: `[1, 2, 3, 2, 3, 2, 1, 2, 3]`
 
 Output: `3`   
+
+### [Largest Rectangle in a Histogram](LargestRectangleInAHistogram.java)
+
+Given a histogram represented by an array of non-negative integers,
+each element in the array represents the height of each bar of the histogram.
+Find the largest rectangular area formed by a number of contiguous bars.
+
+Example 1:
+
+Input: `{3,1,4,3,5,2,1}`
+
+Output: `9`
+```
+                 ___        
+         ___    |   |       
+ ___    |   |___|   |       
+|   |   |+++|+++|+++|___    
+|   |___|+++|+++|+++|   |___
+|___|___|±±±|±±±|±±±|___|___|
+  3   1   4   3   5   2   1 
+```
+The area of the largest rectangle is `9`, which is formed between bar #`2` and #`4` with height `3`.
+
+  
+Example 2:
+
+Input: `{3,1,4,3,5,2,2}`
+
+Output: `10`
+```
+                 ___        
+         ___    |   |       
+ ___    |   |___|   |       
+|   |   |   |   |   |___ ___
+|   |___|+++|+++|+++|+++|+++|
+|___|___|±±±|±±±|±±±|±±±|±±±|
+  3   1   4   3   5   2   2 
+```
+The area of the largest rectangle is `10`, which is formed between bar #`2` and #`6` with height `2`.
 
 ### [Move All Zeros to End](MoveAllZerosToEnd.java)
 
