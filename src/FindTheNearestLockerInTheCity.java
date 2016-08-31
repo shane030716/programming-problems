@@ -1,5 +1,3 @@
-import util.MatrixPrinter;
-
 /*
  * A city will be represented by a 2D array where each element is considered as a block in the city.
  * Given the width and the length of the city, and the locations of some lockers inside the city, 
@@ -26,6 +24,9 @@ import util.MatrixPrinter;
  * 		| 1 | 0 | 1 | 2 | 3 | 2 | 3 |
  * 		-----------------------------
  */
+
+import util.matrixprinter.MatrixPrinter;
+
 public class FindTheNearestLockerInTheCity {
 
 	public static void main(String[] args) {

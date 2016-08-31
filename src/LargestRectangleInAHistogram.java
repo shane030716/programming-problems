@@ -33,7 +33,8 @@
 
 import java.util.Stack;
 
-import util.*;
+import util.histogramprinter.HistogramPrinter;
+import util.matrixprinter.MatrixPrinter;
 
 public class LargestRectangleInAHistogram {
 	

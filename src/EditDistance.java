@@ -18,7 +18,7 @@
 
 import java.util.Scanner;
 
-import util.MatrixPrinter;
+import util.matrixprinter.MatrixPrinter;
 
 public class EditDistance {
 	

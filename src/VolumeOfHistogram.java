@@ -40,9 +40,7 @@
  *   1   0   0   0   6   0   0   3  10   1   2   3   4   5   0   3   0 
  */
 
-import java.util.Formatter;
-
-import util.HistogramPrinter;
+import util.histogramprinter.HistogramPrinter;
 
 public class VolumeOfHistogram {
 

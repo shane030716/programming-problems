@@ -3,7 +3,7 @@
  * Good for debugging code involving 2D arrays.
  */
 
-package util;
+package util.matrixprinter;
 
 public class MatrixPrinter {
 	

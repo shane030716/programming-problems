@@ -1,4 +1,4 @@
-import util.MatrixPrinter;
+import util.matrixprinter.MatrixPrinter;
 
 public class LargestSumSubarray {
 

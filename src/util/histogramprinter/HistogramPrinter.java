@@ -1,4 +1,4 @@
-package util;
+package util.histogramprinter;
 
 import java.util.Formatter;
 import java.util.Stack;
