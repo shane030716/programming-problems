@@ -1,0 +1,3 @@
+[submodule "src/util/histogramprinter"]
+	path = src/util/histogramprinter
+	url = https://github.com/shane030716/histogram-printer
