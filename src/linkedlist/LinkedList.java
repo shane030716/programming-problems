@@ -2,17 +2,22 @@ package linkedlist;
 
 public class LinkedList<T> {
 	public Node<T> head;
+	public Node<T> tail;
 	
 	public void insert(T value) {
 		Node<T> newNode = new Node<T>(value);
 		if (head == null) {
 			head = newNode;
 		} else {
-			Node<T> node = head;
-			while (node.next != null) {
-				node = node.next;
-			}
-			node.next = newNode;
+			tail.next = newNode;
+		}
+		tail = newNode;
+	}
+	
+	public void insertAll(T[] values) {
+		for (int i = 0; i<values.length;i++) {
+			T value = values[i];
+			insert(value);
 		}
 	}
 	

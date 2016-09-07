@@ -7,6 +7,7 @@
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
 * [Largest Rectangle in a Histogram](#largest-rectangle-in-a-histogram)
 * [Move All Zeros to End](#move-all-zeros-to-end)
+* [Remove Duplicates in a Linked List](#remove-duplicates-in-a-linked-list)
 * [Sum Two Linked Lists](#sum-two-linked-lists)
 * [Sum of Weight of Each Path Between Two Nodes in a Graph](#sum-of-weight-of-each-path-between-two-nodes-in-a-graph)
 * [Tower of Hanoi](#tower-of-hanoi)
@@ -177,6 +178,16 @@ Example:
 Input: `[0, 1, 3, 0, 0, 0, 2, 8, 12, 0, 4, 0, 7]`
 
 Output: `[1, 3, 2, 8, 12, 4, 7, 0, 0, 0, 0, 0, 0]`
+
+### [Remove Duplicates in a Linked List](src/RemoveDupsInALinkedList.java)
+
+Remove duplicates from an unsorted linked list.
+
+Example:
+
+Input: `3 -> 5 -> 1 -> 2 -> 3 -> 4 -> 3 -> 1 -> 6 -> 4`
+
+Output: `3 -> 5 -> 1 -> 2 -> 4 -> 6`
 
 ### [Sum Two Linked Lists](src/SumLinkedLists.java)
 
