@@ -5,6 +5,7 @@
 * [Coin Change](#coin-change)
 * [Delete Middle Node in a Linked List](#delete-middle-node-in-a-linked-list)
 * [Edit Distance](#edit-distance)
+* [Find the Intersection of two linked lists](#find-the-intersection-of-two-linked-lists)
 * [Find the Kth Last Element of A Linked List](#find-the-kth-last-element-of-a-linked-list)
 * [Find the Nearest Locker in the City](#find-the-nearest-locker-in-the-city)
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
@@ -38,7 +39,7 @@ Output:
 
 ### [Check if a Linked List is a Palidnrom](src/CheckIfALinkedLIstIsAPalindrome.java)
 
-Given a head node of a linked list, check if it's a palindrom.
+Given a head node of a singly linked list, check if it's a palindrom.
 
 Example: 
 
@@ -89,6 +90,18 @@ Given only access to a node which is in the middle of a singly linked list (not 
 
 Example: Suppose you are given the node `7` from the list `3 -> 5 -> 1 -> 2 -> 3 -> 7 -> 3 -> 1 -> 6 -> 4`, your function should change the list to `3 -> 5 -> 1 -> 2 -> 3 -> 3 -> 1 -> 6 -> 4`. It doesn't need to return anything.
 
+### [Find the Intersection of two linked lists](FindIntersectionOfTwoLinkedLists.java)
+
+Given two singly linked lists, find and return the intersection node. Note that the intersection is defined based on reference, not value.
+
+Example:
+```
+ List1: 3 -> 1 -> 4 -> 1 ⤵︎ 
+                          5 -> 9 -> 2
+ List2:           3 -> 1 ⤴︎ 
+```
+
+The intersection will be 5 -> 9 -> 2
 
 ### [Edit Distance](src/EditDistance.java)
 
