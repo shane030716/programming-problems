@@ -2,7 +2,9 @@
 
 * [BiNode Conversion](#binode-conversion)
 * [Coin Change](#coin-change)
+* [Delete Middle Node in a Linked List](#delete-middle-node-in-a-linked-list)
 * [Edit Distance](#edit-distance)
+* [Find the Kth Last Element of A Linked List](#find-the-kth-last-element-of-a-linked-list)
 * [Find the Nearest Locker in the City](#find-the-nearest-locker-in-the-city)
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
 * [Largest Rectangle in a Histogram](#largest-rectangle-in-a-histogram)
@@ -64,6 +66,13 @@ The number of ways to make exact change of ¢`10` (rounded from ¢`12`) is `2`
 {5: 2}
 ```
 
+### [Delete Middle Node in a Linked List](src/DeleteMiddleNodeOfALinkedList.java)
+
+Given only access to a node which is in the middle of a singly linked list (not necessarily the exact middle node, any node but the last node), delete it from the linked list. Note that you don't have access to the head of the list.
+
+Example: Suppose you are given the node `7` from the list `3 -> 5 -> 1 -> 2 -> 3 -> 7 -> 3 -> 1 -> 6 -> 4`, your function should change the list to `3 -> 5 -> 1 -> 2 -> 3 -> 3 -> 1 -> 6 -> 4`. It doesn't need to return anything.
+
+
 ### [Edit Distance](src/EditDistance.java)
 
 Given two strings str1 and str2 and below operations that can performed on str1. 
@@ -87,6 +96,18 @@ Output: `3`
 Input: `edit, distance`
 
 Output: `6`
+
+### [Find the Kth Last Element of A Linked List](src/FindKthLastElementOfALinkedList.java)
+
+Find the kth to last element of a singly linked list.
+
+Example:
+
+Input: 
+* list: `3 -> 5 -> 1 -> 2 -> 3 -> 4 -> 3 -> 1 -> 6 -> 4`
+* k: `3`
+
+Output: `1`
 
 ### [Find the Nearest Locker in the City](src/FindTheNearestLockerInTheCity.java)
 
