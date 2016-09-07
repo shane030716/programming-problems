@@ -1,7 +1,7 @@
 # Programming Problems
 
 * [BiNode Conversion](#binode-conversion)
-* [Check if a Linked List is a Palidnrom](#check-if-a-linked-list-is-a-palindrome)
+* [Check if a Linked List is a Palindrome](#check-if-a-linked-list-is-a-palindrome)
 * [Coin Change](#coin-change)
 * [Delete Middle Node in a Linked List](#delete-middle-node-in-a-linked-list)
 * [Edit Distance](#edit-distance)
@@ -37,7 +37,7 @@ Output:
 1 <-> 4 <-> 5 <-> 7 <-> 8 <-> 10 <-> 12 <-> 15
 ```
 
-### [Check if a Linked List is a Palidnrom](src/CheckIfALinkedLIstIsAPalindrome.java)
+### [Check if a Linked List is a Palindrome](src/CheckIfALinkedLIstIsAPalindrome.java)
 
 Given a head node of a singly linked list, check if it's a palindrom.
 
@@ -90,7 +90,7 @@ Given only access to a node which is in the middle of a singly linked list (not 
 
 Example: Suppose you are given the node `7` from the list `3 -> 5 -> 1 -> 2 -> 3 -> 7 -> 3 -> 1 -> 6 -> 4`, your function should change the list to `3 -> 5 -> 1 -> 2 -> 3 -> 3 -> 1 -> 6 -> 4`. It doesn't need to return anything.
 
-### [Find the Intersection of two linked lists](FindIntersectionOfTwoLinkedLists.java)
+### [Find the Intersection of two linked lists](src/FindIntersectionOfTwoLinkedLists.java)
 
 Given two singly linked lists, find and return the intersection node. Note that the intersection is defined based on reference, not value.
 
