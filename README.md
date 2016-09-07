@@ -1,6 +1,7 @@
 # Programming Problems
 
 * [BiNode Conversion](#binode-conversion)
+* [Check if a Linked List is a Palidnrom](#check-if-a-linked-list-is-a-palindrome)
 * [Coin Change](#coin-change)
 * [Delete Middle Node in a Linked List](#delete-middle-node-in-a-linked-list)
 * [Edit Distance](#edit-distance)
@@ -34,6 +35,22 @@ Output:
 ```
 1 <-> 4 <-> 5 <-> 7 <-> 8 <-> 10 <-> 12 <-> 15
 ```
+
+### [Check if a Linked List is a Palidnrom](src/CheckIfALinkedLIstIsAPalindrome.java)
+
+Given a head node of a linked list, check if it's a palindrom.
+
+Example: 
+
+Input: `1 -> 2 -> 3 -> 2 -> 1`
+
+Output: `true`
+
+Input: `1 -> 2 -> 3 -> 4 -> 2 -> 1`
+
+Output: `false`
+
+
 
 ### [Coin Change](src/CoinChange.java)
 
