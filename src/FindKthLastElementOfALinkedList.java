@@ -21,10 +21,6 @@ public class FindKthLastElementOfALinkedList {
 		System.out.println(node3.value);
 	}
 	
-	static class Index {
-		public int i = 0;
-	}
-	
 	/*
 	 * O(n) time: and O(1) space
 	 */
@@ -88,4 +84,9 @@ public class FindKthLastElementOfALinkedList {
 		index.i = index.i + 1;
 		return node;
 	}
+	
+	static class Index {
+		public int i = 0;
+	}
+	
 }
