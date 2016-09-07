@@ -10,6 +10,7 @@
 * [Find the Nearest Locker in the City](#find-the-nearest-locker-in-the-city)
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
 * [Largest Rectangle in a Histogram](#largest-rectangle-in-a-histogram)
+* [Loop Detection in a Linked List](#loop-detection-in-a-linked-list)
 * [Move All Zeros to End](#move-all-zeros-to-end)
 * [Remove Duplicates in a Linked List](#remove-duplicates-in-a-linked-list)
 * [Sum Two Linked Lists](#sum-two-linked-lists)
@@ -180,6 +181,22 @@ Example:
 Input: `[1, 2, 3, 2, 3, 2, 1, 2, 3]`
 
 Output: `3`   
+
+### [Loop Detection in a Linked List](src/LoopDetectionInALinkedList.java)
+
+Given a circular linked list, find and return the node at the beginning of the loop.
+
+Example: 
+
+Input: 
+```
+0 -> 1 -> 2 -> 3 -> 4 
+               ⬆︎   ⬇︎︎
+               6 <- 5
+```
+Output:
+The `3` Node
+
 
 ### [Largest Rectangle in a Histogram](src/LargestRectangleInAHistogram.java)
 
