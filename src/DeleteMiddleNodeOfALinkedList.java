@@ -21,7 +21,7 @@ public class DeleteMiddleNodeOfALinkedList {
 	/*
 	 * More optimal
 	 * Change the current node's value to the next node's value
-	 * And then update current node's next tot next node's next
+	 * And then update current node's next to next node's next
 	 */
 	public static void deleteMiddle(Node<Integer> node) {
 		if (node == null || node.next == null) return;
