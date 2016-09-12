@@ -38,7 +38,7 @@ Output:
 1 <-> 4 <-> 5 <-> 7 <-> 8 <-> 10 <-> 12 <-> 15
 ```
 
-### [Check if a Linked List is a Palindrome](src/CheckIfALinkedLIstIsAPalindrome.java)
+### [Check if a Linked List is a Palindrome](src/CheckIfALinkedListIsAPalindrome.java)
 
 Given a head node of a singly linked list, check if it's a palindrom.
 
