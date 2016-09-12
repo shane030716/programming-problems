@@ -49,7 +49,7 @@ public class Graph {
 			System.out.println("Node \"" + start + "\" does not exist");
 		}
 		
-		NavigableSet<GraphNode> queue = new TreeSet<>();
+		NavigableSet<GraphNode> queue = new TreeSet<GraphNode>();
 		for (GraphNode node: this.nodes.values()) {
 			node.previous = node == source ? source : null;
 			node.distance = node == source ? 0 : Integer.MAX_VALUE;

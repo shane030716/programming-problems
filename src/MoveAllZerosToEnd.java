@@ -1,13 +1,10 @@
 public class MoveAllZerosToEnd {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		int[] arr = new int[] {0,1,3,0,0, 0, 2, 8,12,0,4,0,7};
 		printArray(arr);
 		moveAllZerosToEnd(arr);
 		printArray(arr);
-		
 	}
 	
 	/*
@@ -75,7 +72,6 @@ public class MoveAllZerosToEnd {
 		arr = result;
 	}
 	
-
 	/*
 	 * O(n2) time, O(1) space
 	 */
