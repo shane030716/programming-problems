@@ -1,5 +1,6 @@
 # Programming Problems
 
+* [Anagram](#anagram)
 * [BiNode Conversion](#binode-conversion)
 * [Check if a Linked List is a Palindrome](#check-if-a-linked-list-is-a-palindrome)
 * [Coin Change](#coin-change)
@@ -18,6 +19,21 @@
 * [Tower of Hanoi](#tower-of-hanoi)
 * [Triple Step](#triple-step)
 * [Volume of Histogram](#volume-of-histogram)
+
+### [Anagram](src/Anagram.java)
+
+You are given a string which is a valid English word. Return all the anagrams of this word that are also valid words.
+Anagram meaning: a string formed by rearranging the characters of another.
+
+Example:
+
+Input: `"seat"`
+Output: `["east", "eats", "sate", "seat", "teas"]`
+
+Follow up:
+
+Write a function to check if two strings are anagram of each other.
+
 
 ### [BiNode Conversion](src/BiNodeConversion.java)
 

@@ -124,10 +124,10 @@ public class Anagram {
 	
 	/*
 	 * Check if a string is a valid word
-	 * Simple version. Not need to implement it
+	 * Simple version. No need to implement it
 	 */
 	private static boolean isAWord(String str) {
-		String[] validWords = new String[] {"east", "eats", "sate", "seat", "teas"};
+		String[] validWords = new String[] {"east", "eats", "sate", "seat", "teas", "eat", "ate", "tea", "sat", "set", "sea", "as", "at" };
 		List<String> words = Arrays.asList(validWords);
 		
 		return words.contains(str);
