@@ -1,11 +1,14 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class FindThePairWhoseSumIsEqualToAGivenNumberInAnArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = {1,2,4,4,9};
+		int[] arr = {6,3,5,4,2};
 		int sum = 8;
-		findPairSorted(arr, sum);
+		findPairUnsorted(arr, sum);
 	}
 
 	
@@ -86,5 +89,56 @@ public class FindThePairWhoseSumIsEqualToAGivenNumberInAnArray {
 	/****************************
 	 ******* Unsorted Array *******
 	 ****************************/
+	
+	/*
+	 * Use additional data structure.
+	 * O(n) time, O(n) space
+	 */
+	
+	public static void findPairUnsorted(int[] arr, int sum) {
+		Set<Integer> set = new HashSet<Integer>();
+		for (int i = 0;i<arr.length;i++) {
+			int complement = sum - arr[i];
+			if (set.contains(arr[i])) {
+				System.out.println(complement + " + " + arr[i] + " = " + sum);
+				return;
+			} else {
+				set.add(complement);
+			}
+			
+		}
+		System.out.println("No pair found.");
+	}
+	
+	/*
+	 * Brute Force.
+	 * Same as findPairSorted1
+	 * O(n2) time, O(1) space
+	 */
+	public static void findPairUnsorted1(int[] arr, int sum) {
+		findPairSorted1(arr, sum);
+	}
+	
+	/*
+	 * Sort the array first
+	 * and then use findPairSorted2
+	 * O(nlogn) time, O(logn) space?
+	 */
+	public static void findPairUnsorted2(int[] arr, int sum) {
+		Arrays.sort(arr);
+		findPairSorted2(arr, sum);
+	}
+	
+	/*
+	 * Sort the array first
+	 * and then use findPairSorted
+	 * O(nlogn) time, O(1) space
+	 */
+	public static void findPairUnSorted3(int[] arr, int sum) {
+		Arrays.sort(arr);
+		findPairSorted(arr, sum);
+	}
+	
+
 	
 }
