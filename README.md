@@ -10,6 +10,7 @@
 * [Find the Kth Last Element of A Linked List](#find-the-kth-last-element-of-a-linked-list)
 * [Find the Nearest Locker in the City](#find-the-nearest-locker-in-the-city)
 * [Find the Number Occurring Odd Number of Times](#find-the-number-occurring-odd-number-of-times)
+* [Find the Pair of Integers Whose Sum Is Equal to a Given Number in An (Sorted or Unsorted) Array](#find-the-pair-of-integers-whose-sum-is-equal-to-a-given-number-in-an-sorted-or-unsorted-array)
 * [Largest Rectangle in a Histogram](#largest-rectangle-in-a-histogram)
 * [Loop Detection in a Linked List](#loop-detection-in-a-linked-list)
 * [Move All Zeros to End](#move-all-zeros-to-end)
@@ -213,6 +214,23 @@ Input:
 Output:
 The `3` Node
 
+### [Find the Pair of Integers Whose Sum Is Equal to a Given Number in An (Sorted or Unsorted) Array](src/FindThePairWhoseSumIsEqualToAGivenNumberInAnArray.java)
+
+Given a sorted integer array and a given number, find a pair of integers from the array whose sum is equal to the given number.
+
+Example:
+
+Input: `{1,3,4,7,9}`, `7`
+
+Output: `3` & `4`
+
+How about an unsorted array?
+
+Example:
+
+Input: `{7,4,1,9,3}`, `7`
+
+Output: `3` & `4`
 
 ### [Largest Rectangle in a Histogram](src/LargestRectangleInAHistogram.java)
 
